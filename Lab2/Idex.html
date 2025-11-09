@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Lab 2 - Personal Portfolio Website (CSS Core)
+        Author: Param
+        Description: A one-page portfolio website with external CSS styling.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param | Portfolio</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= SKIP TO MAIN CONTENT LINK ================= -->
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+        <h1>Param</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h2>Welcome to My Portfolio</h2>
+        <p>Exploring the world of web development and programming.</p>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main">
+
+        <!-- ============ ABOUT SECTION ============ -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="Param.jpg" alt="Profile Picture of Param" width="170" height="170">
+            <p>Hi! I'm Param, a web development enthusiast exploring HTML, CSS, and Python.
+                I love solving problems and learning new tech tools. I aim to build visually appealing and functional
+                web experiences.</p>
+        </section>
+
+        <hr>
+
+        <!-- ============ PROJECTS SECTION ============ -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website</strong> – A personal site built using HTML and CSS.</li>
+                <li><strong>Credit Card Fraud Detection</strong> – Detects credit card fraud using data analysis and algorithms.</li>
+                <li><strong>Analytical Website</strong> – Displays dynamic graphs based on expense data.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- ============ SKILLS SECTION ============ -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Learning</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2025 Param. All rights reserved.</p>
+    </footer>
+
+    <!-- ================= BACK TO TOP BUTTON ================= -->
+    <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
+
+</body>
+</html>
