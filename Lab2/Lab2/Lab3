@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Param — Portfolio</title>
+
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">Param</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="lead">Hi, I am</p>
+          <h1>Param </h1>
+          <p class="role">Full Stack Developer</p>
+          <p class="desc">I build responsive websites and enjoy learning AI/ML. This is a simple portfolio layout using Flexbox and Grid.</p>
+          <div class="cta">
+            <a href="#projects" class="btn primary">Projects</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="/mnt/data/26842ef7-7e9e-4125-b096-3805a02d5d26.png" alt="Param profile">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About</h2>
+        <p> A curious seeker and computer science AI ML student . I like building clean interfaces and learn system design. </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="grid skills-grid">
+          <div class="card"><strong>HTML</strong><div class="muted">Intermediate</div></div>
+          <div class="card"><strong>CSS</strong><div class="muted">Intermediate</div></div>
+          <div class="card"><strong>JavaScript</strong><div class="muted">Learning</div></div>
+          <div class="card"><strong>Python</strong><div class="muted">Intermediate</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="grid projects-grid">
+          <div class="project card">
+            <h3>Hotel Management</h3>
+            <p>Booking & admin (SQL).</p>
+          </div>
+          <div class="project card">
+            <h3>Barcode Attendance</h3>
+            <p>Attendance automation.</p>
+          </div>
+          <div class="project card">
+            <h3>Portfolio</h3>
+            <p>This site — simple and responsive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" rows="4" placeholder="Message"></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2025 Param • <a href="#top">Top</a></div>
+  </footer>
+</body>
+</html>
