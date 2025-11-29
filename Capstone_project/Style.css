@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fc;
+  color: #1e293b;
+}
+
+/* NAVIGATION */
+.navbar {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  color: #2563eb;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.search-bar input {
+  padding: 10px 16px;
+  width: 280px;
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+.nav-right button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.signup-btn {
+  background: #2563eb;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(#eef4ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-search input {
+  padding: 10px 16px;
+  width: 260px;
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+}
+
+.hero-search button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+/* CATEGORIES */
+.categories {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cat-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cat-card img {
+  width: 40px;
+  margin-bottom: 8px;
+}
+
+/* FEATURED */
+.featured {
+  padding: 2rem 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1rem;
+}
+
+.course-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #64748b;
+}
