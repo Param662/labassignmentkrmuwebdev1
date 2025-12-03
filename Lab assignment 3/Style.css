@@ -1,0 +1,208 @@
+/* Google Font */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f0f5ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: #0057b7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    color: white;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* HERO (Flexbox) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 3rem;
+    gap: 2rem;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-img img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0057b7;
+    animation: pop 1s ease-in-out;
+}
+
+/* Highlight animation */
+.animate-role {
+    font-size: 1.8rem;
+    color: #0057b7;
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: #0057b7; }
+    100% { color: #ff5722; }
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #0057b7;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #003f88;
+    transform: scale(1.05);
+}
+
+/* Fade Animation */
+.fade-section {
+    padding: 3rem;
+    margin-top: 2rem;
+    background: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* GRID – Skills */
+.skills-grid {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+    background: #e7eeff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #d6e4ff;
+    transform: translateY(-5px);
+}
+
+/* GRID – Projects */
+.projects-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.project-card {
+    background: #e6f0ff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #cfe0ff;
+    transform: translateY(-7px);
+}
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #003f88;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Back to top */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #0057b7;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
