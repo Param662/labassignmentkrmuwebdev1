@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Param</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm <span class="highlight">Param</span></h2>
+            <h3 class="animate-role">Web Developer</h3>
+            <p>Building clean, responsive and modern web experiences.</p>
+
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="Param.png" alt="Param Picture">
+        </div>
+    </section>
+
+    <section id="about" class="fade-section">
+        <h2>About Me</h2>
+        <p>
+            I'm Param , a passionate web development student exploring HTML, CSS, Python, 
+            and modern UI design. I love building clean and professional user interfaces.
+        </p>
+    </section>
+
+    <section id="skills" class="fade-section">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div class="card">HTML - Intermediate</div>
+            <div class="card">CSS - Intermediate</div>
+            <div class="card">Python - Intermediate</div>
+            <div class="card">JavaScript - Beginner</div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-section">
+        <h2>My Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A clean responsive portfolio using HTML & CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Fraud Detection</h3>
+                <p>Credit card fraud detection using ML algorithms.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Analytics Dashboard</h3>
+                <p>Dynamic charts and graphs for expense analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <label>Message</label>
+            <textarea placeholder="Your message..." required></textarea>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Param. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+</body>
+</html>
